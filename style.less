@@ -1,4 +1,4 @@
-/** 
+/**
 * Anax Flat theme.
 */
 @import url(modules.less);
@@ -17,5 +17,120 @@
 .site-logo-text-icon {
     img {
         vertical-align: bottom;
+    }
+}
+
+html {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #3d4147;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    & li {
+        text-align: left;
+    }
+
+    & ul {
+        max-width: 120px;
+        margin: auto;
+    }
+
+    & a {
+        color: white;
+    }
+
+    & a:hover {
+        color: grey;
+    }
+
+    & .footer-column-1 {
+        border-right: 1px solid #666;
+    }
+
+    & .footer-column-2 {
+        border-right: 1px solid #666;
+    }
+}
+
+main.has-sidebar-left {
+    display: inline;
+    float: left;
+    box-sizing: border-box;
+    width: 65.625%;
+    margin: auto;
+}
+
+.content {
+    clear: both;
+}
+
+
+@media screen and (max-width: 900px) {
+    .site-logo-text {
+        width: 40%;
+    }
+
+    .rm-navbar-top {
+        display: none;
+    }
+
+    .rm-navbar-max {
+        display: inherit;
+    }
+
+    .navbar2 {
+        width: 50%;
+    }
+
+    .profile {
+        width: 10%;
+    }
+
+    .byline {
+        display: none;
+    }
+
+    .sidebar.sidebar-left.has-sidebar-left.has-sidebar {
+        display: none;
+    }
+
+    main.has-sidebar-left {
+        width: 90%;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .site-logo-text {
+        font-size: 0%;
+    }
+
+    .footer-column {
+        float: none;
+        border-bottom: 1px solid #666;
+        width: 100%;
+        & .footer-column-1 {
+            border-right: none;
+        }
+
+        & .footer-column-2 {
+            border-right: none;
+        }
+    }
+
+    .create {
+        display: none;
+
     }
 }
